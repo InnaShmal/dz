@@ -1,0 +1,25 @@
+* {
+    background-color: rgb(224, 70, 70);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #011403f3;
+}
+
+#timer {
+    font-size: 32px;
+    font-weight: bold;
+    color: #011403f3;
+    margin-bottom: 50px;
+}
