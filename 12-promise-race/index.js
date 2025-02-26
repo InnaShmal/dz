@@ -5,9 +5,19 @@ async function getProduct(id) {
     return resProduct.json();
 }
 
+function customRace(promises) {
+    return new Promise((resolve, reject) => {
+        for (const promise of promises) {
+            Promise.resolve(promise)
+                .then(resolve)
+                .catch(reject);
+            }
+    })
+}
+
 async function race() {
     try {
-        const response = await Promise.race([getProduct(1), getProduct(2)]);
+        const response = await customRace([getProduct(1), getProduct(2)]);
 
         console.log(response);
     } catch (e) {
