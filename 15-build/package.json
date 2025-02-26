@@ -1,0 +1,17 @@
+{
+    "name": "15-build",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rollup index.js --format iife --file public/bundle.js",
+        "start": "live-server public"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "rollup": "^4.34.8"
+    }
+}
